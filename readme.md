@@ -12,16 +12,16 @@
 
 **نحوه استفاده**
 
-- `./videoDownloader.sh https://www.aparat.com/<CHANEL_NAME>`
+- `./videoDownloader.sh https://www.aparat.com/<CHANEL_NAME>`   
 همه ویدیو‌های کانال رو با کیفیت پیش‌فرض ۷۲۰ دانلود می‌کنه
 
-- `./videoDownloader.sh https://www.aparat.com/<CHANEL_NAME> 360`
+- `./videoDownloader.sh https://www.aparat.com/<CHANEL_NAME> 360`   
 همه ویدیو‌های کانال رو با کیفیت مشخص شده دانلود می‌کنه
 
-- `./videoDownloader.sh <PAGES_LINK_LIST_FILE>`
+- `./videoDownloader.sh <PAGES_LINK_LIST_FILE>`   
 ویدیوی لینک‌های داخل فایل با کیفیت پیش‌فرض دانلود میشه
 
-- `./videoDownloader.sh <PAGES_LINK_LIST_FILE> 144`
+- `./videoDownloader.sh <PAGES_LINK_LIST_FILE> 144`   
 ویدیوی لینک‌های داخل فایل با کیفیت مشخص شده دانلود میشه
 
 

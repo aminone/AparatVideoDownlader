@@ -46,10 +46,11 @@ if [[ -f "$videoLinksFile" ]]; then
         LINK=`grep -o "<a href=\"https:\/\/.*-${videoQuality}p__.*\.mp4" ${tempHtmlFile} | grep -o "https.*$"`
         if [[ -z "$LINK" ]]; then
             echo -e "\e[31mSomething went wrong! probably $line does not have any \e[4m${videoQuality}p\e[0m \e[31mversion\e[0m"
+            index=$(( $index + 1 ))
             continue
         fi
         
-        TITLE=`grep -o "<title>.*</title>" ${tempHtmlFile} | sed 's/\(<title>\|<\/title>\)//g'`
+        TITLE=`grep -oP '(?<=<meta property="og:title" content=").*?(?="/>)' ${tempHtmlFile}`
         echo -e "$LINK\n        out=$TITLE.mp4" >> ${downloadLinksFile}
         echo -e "\e[32m\"${TITLE}\" download link added successfully!\e[0m"
 
